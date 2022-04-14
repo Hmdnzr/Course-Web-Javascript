@@ -1,0 +1,71 @@
+---- Array ----
+
+Pengertian:
+    - "Kumpulan nilai, yang memiliki index."
+    - Index tersebut memiliki nilai yang berawal dari nol
+
+
+---- Object ----
+
+Pengertian:
+    - "Kumpulan nilai, yang memiliki nama."
+    - "Object adaalh array, yang lebih sakti."
+    - "In javascript, object are king. If you understand object, you understand javascript."
+
+Object pada bahasa pemrograman lain:
+    - PHP: Assosiative Array
+    - Python: Dictionaries
+    - C: Hash Tables
+    - Java: Hash Maps
+    - Ruby & Perl: Hashes
+
+Kenapa Object ?:
+
+    1. Menggunakan Array:
+- var namaMhs = 'Hamadan R';
+          var umurMhs = 23;
+          var lulus = false;
+          var IPSemester = [3.32, 3.52, 3.50, 3.80, 3.90];
+          function IPKomulatif(IPSemester) {
+              var total = 0;
+              for(var i = 0; i < IPSemester.length; i++) {
+                  total += IPSemester[i];
+              }        
+              return total/IPSemester.length;
+          }
+
+          - var mahasiswa = ['Hamdan', true, [2.90, 3.10, 3.25, 2.88, 3.04]]
+          function IPKomulatif(IPSemester) {
+              var total = 0;
+              for(var i = 0; i < IPSemester.length; i++) {
+                  total += IPSemester[i];
+              }
+              return total/IPSemester.length;
+          }
+          IPKomulatif(mahasiswa[2]);
+    
+    2. Menggunakan Object:
+          - var mahasiswa = {
+               nama : 'Hamdan',
+               lulus : true,
+               IPSemester : [2.90, 3.10, 3.25, 2.88, 3.04],
+               IPKomulatif : function() {
+                   var total = 0;
+                   var ips = this.IPSemester;
+                   for(var i = 0; i < ips.length; i++) {
+                       total += ips[i];
+                   }
+                   return total/ips.length;
+               }
+            }
+            mahasiswa.IPKomulatif();
+          
+          - var orang = {
+              nama : 'Hamdan R',
+              umur : 23,
+              pekerjaan : 'Freelance',
+              sapa : function() {
+                  return 'Hi, nama saya ' + this.nama + ' usia saya ' + this.umur + ' tahun, dan saya adalah seoran
+                  + this.pekerjaan;
+                }
+              }

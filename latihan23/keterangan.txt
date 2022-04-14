@@ -1,0 +1,60 @@
+-- Array pada Javascript --
+Menurut website https://en.wikipedia.org/wiki/Array:
+    "Susunan sistematis dari objek-objek yang serupa"
+
+Didalam dunia programming:
+    "Tipe data yang digunakan untuk mendeskripsikan kumpulan elemen (Nilai atau variabel),
+     yang tiap-tiap elemennya memiliki index"
+
+Artinya:
+    "Array adalah variabel yang lebih sakti, karena array bisa menampung lebih dari satu nilai"
+
+Contoh:
+    1. var hari = ['Senin','Selasa','Rabu'];
+    2. var mhs = ['hamadan','nikola','eka', 'fadhil', 'Ragis'];
+
+Kenapa menggunakan Array:
+    1. Mempermudah pengelolaan nilai/value/data
+        * Penelusuran dan Pencarian
+    2. Manajemen memori
+
+Karakteristik dari Array:
+    1. Variabel jamak, yang mempunyai banyak elemen dan diacu dengan nama yang sama
+    2. Kumpulan pasangan key dan nilai / key and value pair
+        * Key nya adalah index, dan value nya adalah elemennya
+    3. Key adalah index pada array dengan tipe integer yang dimulai dari 0
+    4. Array pada javascript bertipe object
+    5. Array pada javascript memiliki fungsi / method length untuk menghitung jumlah elemen di dalamnya
+    6. Elemen pada array boleh memiliki tipe data yang berbeda
+
+Manipulasi Array:
+    1. Menambah elemen pada array
+    2. Menghapus elemen pada array
+    3. Menampilkan seluruh isi Array
+
+Method Array:
+    1. length
+       - Untuk mengetahui berapa jumlah element yang ada pada array
+    2. join
+       - Untuk menggabungkan seluruh isi array dan mengubahnya menjadi sebuah string
+    3. push, pop, shift, unshift
+       - Keempat method ini digunakan untuk menambah atau menghapus elemen array
+       - push, mendorong masuk
+       - pop, memecahkan atau menghilangkan
+       - shift, menggeser keluar
+       - unshift, menggeser kedalam
+    4. slice, splice
+       - slice, seperti mengiris array, digunakan ketika ingin mengambil beberapa bagian pada array
+         untuk menjadi array yang baru
+       - splice, seperti menyambung atau menambal array, digunakan untuk menyisipkan sebeuah elemen
+         ditengah-tengah menggunakan splice
+    5. foreach, map
+       - Kedua method ini digunakan untuk melakukan looping pada array, tetapi foreach lebih keren
+         dari pada for biasa, dengan menggunakan kedua method ini bisa melakukan sesuatu pada elemen-elemen
+         yang ada didalam array secara automatice
+       - foreach, tidak mengembalikan array 
+       - map, mengembalikan array
+    6. filter, find
+       - Kedua method ini digunakan untuk mencari elemen pada array
+       - find, mengembalikan satu nilai
+       - filter, bisa mengembalikan banyak nilai
